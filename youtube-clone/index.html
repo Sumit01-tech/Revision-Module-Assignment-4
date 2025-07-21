@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>YouTube Clone</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100">
+  <nav class="flex justify-between items-center bg-white p-4 shadow">
+    <h1 class="text-2xl font-bold text-red-600">YouTube</h1>
+    <input id="searchInput" type="text" placeholder="Search..." class="border px-4 py-2 rounded-md w-1/2" />
+    <button id="logoutBtn" class="bg-red-500 text-white px-4 py-2 rounded-md">Logout</button>
+  </nav>
+  <div id="suggestions" class="bg-white mx-auto w-1/2 shadow z-10 absolute"></div>
+  <main id="videoContainer" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 p-4"></main>
+  <script type="module" src="scripts/home.js"></script>
+</body>
+</html>
